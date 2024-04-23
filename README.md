@@ -89,10 +89,15 @@ Ideally, we should be able to **predict as many dropouts as possible** and take 
 From the Decision Tree and Logistic Regression model, we can see that the following
 
 curriculum credits
+
 tuition fee upto date
+
 course
+
 age
+
 parents' qualification
+
 are **important features to predict** drop outs **and work on them to prevent.
 
 The **Decision tree** is easy to comprehend and action on the feature values, has good accuracy of 75% and has low inference time. Hence this is recommended.

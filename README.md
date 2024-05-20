@@ -3,6 +3,8 @@ Capstone project to predict a student's drop out in a college using ML classific
 
 The link to the Jupiter notebook is https://github.com/praloysinha/Capstone/blob/main/Capstone_Praloy.ipynb
 
+Data Source : https://www.kaggle.com/datasets/thedevastator/higher-education-predictors-of-student-retention
+
 **Objective:**
 
 The Business Objective is to evaluate the different classifers like KNN,Logistic Regression, Decision Tree and Support Vector Machines on the college dropout dataset in predicting the right classification whether the persons are enrolled, graduate or dropout.

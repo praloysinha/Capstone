@@ -68,7 +68,7 @@ The SVC best model is at polynomial degree 6 and is at medium complexity
 
 Curriculum credits, tuition fee upto date, course, age, parents' qualification are few of the important features which affect the dropout
 
-**Conclusion:**
+**Initial Inferences with Standalone Models:**
 
 The data had highly imbalanced classes which had to be balanced
 
@@ -82,7 +82,7 @@ KNN has the highest 78 % precision but uses a complex model
 
 Decision Tree provided clarity through its 7 level tree; however SVM is a litte bit of a black box with only indices information and low accuracy
 
-**Findings and next steps:**
+**Intermediate Findings and next steps:**
 
 Ideally, we should be able to **predict as many dropouts as possible** and take corrective action to prevent it.
 
@@ -100,6 +100,31 @@ parents' qualification
 
 are **important features to predict** drop outs **and work on them to prevent.
 
-The **Decision tree** is easy to comprehend and action on the feature values, has good accuracy of 75% and has low inference time. Hence this is recommended.
+The **Decision tree** is easy to comprehend and action on the feature values, has good accuracy of 75% and has low inference time. Hence this is recommended as a standalone model. 
 
-Rerun the model evaluation every 6 months to understand any potential changes to the parameters
+**Ensemble Techniques**
+
+After the standalone models were run, the ensemble techniqus were used and a Grid Search also performed on them.
+
+1. The techniques were Adaboost, Gradient boosted trees, Random Forest, Random firest with OOB, XG Boost, Extra Trees Classifier, Voting and Stacking Classifier
+   
+2. The best model was the Random Forest one at 84.4% test accuracy
+   
+3. After the Grid Search, the best model was Gradient boosted trees with 85.7% test accuracy
+   
+4. Hence the **Gradient Boosted trees is the final recommended model** to predict the dropouts. The feature importance is also generated and the top ones are:
+
+Curriculum credits
+
+Tuition fees
+
+Admission Grade
+
+Course
+
+Previous Qualification
+
+F**inal Recommendation**
+
+Consider the Gradient Boosted Trees model with {'max_depth': 10, 'max_features': 8, 'n_estimators': 200} parameters for predicting dropouts 
+

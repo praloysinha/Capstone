@@ -106,7 +106,7 @@ The **Decision tree** is easy to comprehend and action on the feature values, ha
 
 After the standalone models were run, the ensemble techniqus were used and a Grid Search also performed on them.
 
-1. The techniques were Adaboost, Gradient boosted trees, Random Forest, Random firest with OOB, XG Boost, Extra Trees Classifier, Voting and Stacking Classifier
+1. The techniques were Adaboost, Gradient boosted trees, Random Forest, Random forest with OOB, XG Boost, Extra Trees Classifier, Voting and Stacking Classifier
    
 2. The best model was the Random Forest one at 84.4% test accuracy
    
